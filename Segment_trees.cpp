@@ -41,7 +41,7 @@ class SEGTree{
        //no overlap
        if(req_l>r || req_r<l)return 0;
        //complete overlap
-       else if(req_l>=l && req_r<=r)return seg[ind];
+       else if(l>=req_l && r<=req_r)return seg[ind];
        //partial overlap
        else{
            int m = (l+r)/2;
